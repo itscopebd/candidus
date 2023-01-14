@@ -163,3 +163,22 @@ flex-shrink: 0;
     display: flex;
     gap: 25px;
 }
+
+
+/*-------------------
+ responsive styles  
+ --------------------*/
+
+ @media(max-width:768px){
+    .section__primary,
+    .section__secondary {
+        padding: 5rem 25px;
+    }
+    .photo__gallery {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .section__text__primary, .section__text__secondary, .section__text__tertiary {
+        font-size: 2rem;
+    }
+ }
